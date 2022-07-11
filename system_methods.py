@@ -13,8 +13,9 @@ def clear_console():
     os.system(command)
     
 ####### TYPE ONE LETTER AT A TIME
+
 def delay_print(string):
     for character in string:
         sys.stdout.write(character)
         sys.stdout.flush()
-        time.sleep(0.025)
+        time.sleep(0)

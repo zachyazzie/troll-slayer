@@ -139,11 +139,11 @@ def race_stats(race):
         potions = []
         return hp, ac, weapons, potions
     else:
-       hp = 25
-       ac = 16
-       weapons = ['FIST', 'LONGSWORD', 'BATTLEAXE']
-       potions = ['POTION OF HEALTH', 'POTION OF HEALTH', 'POTION OF HEALTH']
-       return hp, ac, weapons, potions 
+        hp = 25
+        ac = 16
+        weapons = ['FIST', 'LONGSWORD', 'BATTLEAXE']
+        potions = ['POTION OF HEALTH', 'POTION OF HEALTH', 'POTION OF HEALTH']
+        return hp, ac, weapons, potions 
 
 def race_check():
     while True:
@@ -177,7 +177,7 @@ def race_hp_for_health(race):
 
 ### HEALTH BAR
 def health_bar(player_race, current_health):
-  
+
     player_max_health = race_hp_for_health(player_race)
 
     if current_health == player_max_health:
@@ -271,7 +271,6 @@ def option_bar(name, player_hp, player_ac, troll_ac, troll_hp, player_race, play
         else:
             input('Invalid option. Press Enter to try again...')
             option_bar(name, player_hp, player_ac, troll_ac, troll_hp, player_race, player_weapons, player_potions)
-         
 
 #FIGHT will take you to the normal screen but the PUNCH or SWORD are customizeable from what's "equipped" in inventory.
 #essentially it will be print(f'Do you use your {weapon_inventory[0]} or {weapon_inventory[1]}')
@@ -354,7 +353,7 @@ def weapons_menu(name, player_hp, player_ac, troll_ac, troll_hp, player_race, pl
 |¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|
 |   SLOT #        ITEM       |
  ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
- ''')
+''')
     count_list(player_weapons)
     print('______________________________')
     print('''
@@ -412,7 +411,7 @@ def equip_menu_one(name, player_hp, player_ac, troll_ac, troll_hp, player_race, 
 |¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|
 |   SLOT #        ITEM       |
  ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
- ''')
+''')
     count_list(player_weapons)
     print('______________________________')
 
